@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>معايير سلامة الأطفال | Child Safety Standards</title>
+
+<style>
+*{
+box-sizing:border-box;
+font-family:Arial,Tahoma,sans-serif;
+}
+
+body{
+margin:0;
+background:#f4f6fb;
+color:#222;
+line-height:1.9;
+}
+
+.container{
+max-width:900px;
+margin:40px auto;
+background:#fff;
+padding:35px;
+border-radius:22px;
+box-shadow:0 10px 35px #0002;
+}
+
+h1{
+text-align:center;
+color:#7b2cff;
+}
+
+h2{
+color:#7b2cff;
+margin-top:30px;
+}
+
+.tag{
+display:block;
+width:max-content;
+margin:auto;
+background:#7b2cff;
+color:white;
+padding:8px 18px;
+border-radius:30px;
+}
+
+.card{
+background:#f1e9ff;
+padding:20px;
+border-radius:15px;
+margin-top:20px;
+}
+
+ul{
+padding-right:25px;
+}
+
+.en{
+direction:ltr;
+text-align:left;
+border-top:2px solid #ddd;
+margin-top:40px;
+padding-top:30px;
+}
+
+.footer{
+text-align:center;
+margin-top:35px;
+color:#777;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<div class="tag">
+Child Safety Standards
+</div>
+
+
+<h1>معايير سلامة الأطفال</h1>
+
+
+<h2>حول التطبيق</h2>
+
+<p>
+تنطبق هذه السياسة على تطبيق:
+<br>
+<strong>دردشه بنات مصر وسوريا (elpop_mayaa.com)</strong>
+</p>
+
+<p>
+هذا التطبيق مخصص للمستخدمين بعمر 18 سنة فأكثر.
+لا يسمح باستخدام التطبيق من قبل الأطفال أو القاصرين.
+</p>
+
+<p>
+نحن ملتزمون بتوفير بيئة آمنة لجميع المستخدمين ومنع أي إساءة أو استغلال للأطفال.
+</p>
+
+
+
+<h2>منع استغلال الأطفال</h2>
+
+<p>
+نحن نطبق سياسة عدم التسامح مطلقاً مع:
+<strong>الاستغلال أو الإساءة الجنسية للأطفال (CSAE)</strong>
+</p>
+
+<ul>
+
+<li>منع أي محتوى جنسي يخص الأطفال أو القاصرين.</li>
+
+<li>منع استدراج الأطفال أو محاولة استغلالهم.</li>
+
+<li>منع نشر أو مشاركة مواد إساءة معاملة الأطفال (CSAM).</li>
+
+<li>منع أي سلوك يهدد سلامة الأطفال.</li>
+
+</ul>
+
+
+
+<h2>أدوات حماية المستخدم</h2>
+
+<p>
+يوفر التطبيق أدوات تساعد المستخدمين على الحفاظ على الأمان:
+</p>
+
+<ul>
+
+<li>الإبلاغ عن المستخدمين أو المحتوى المخالف.</li>
+
+<li>حظر المستخدمين غير المناسبين.</li>
+
+<li>مراجعة البلاغات واتخاذ الإجراءات اللازمة.</li>
+
+</ul>
+
+
+
+<h2>معالجة البلاغات</h2>
+
+<p>
+يتم مراجعة جميع البلاغات المتعلقة بسلامة الأطفال،
+وفي حالة وجود مخالفة يتم اتخاذ الإجراءات المناسبة مثل:
+حذف المحتوى أو إيقاف الحساب.
+</p>
+
+
+
+<div class="card">
+
+<h2>جهة التواصل لسلامة الأطفال</h2>
+
+<p>
+لأي بلاغات أو استفسارات متعلقة بسلامة الأطفال:
+</p>
+
+<p>
+<strong>Email:</strong>
+<br>
+mydw35539@gmail.com
+</p>
+
+</div>
+
+
+
+<h2>بيانات المطور</h2>
+
+<p>
+المطور:
+<br>
+<strong>elpop_mayaa.com</strong>
+</p>
+
+<p>
+اسم التطبيق:
+<br>
+<strong>دردشه بنات مصر وسوريا</strong>
+</p>
+
+
+
+
+
+<div class="en">
+
+
+<h1>Child Safety Standards</h1>
+
+
+<h2>About the App</h2>
+
+<p>
+This policy applies to:
+<br>
+<strong>دردشه بنات مصر وسوريا (elpop_mayaa.com)</strong>
+</p>
+
+<p>
+This app is intended for users aged 18 and above.
+Children and minors are not allowed to use this application.
+</p>
+
+<p>
+We are committed to maintaining a safe environment and protecting users from abuse and exploitation.
+</p>
+
+
+
+<h2>Zero Tolerance for CSAE</h2>
+
+<p>
+We strictly prohibit Child Sexual Abuse and Exploitation (CSAE), including:
+</p>
+
+<ul>
+
+<li>Any sexual content involving children or minors.</li>
+
+<li>Child grooming or exploitation.</li>
+
+<li>Sharing or distributing Child Sexual Abuse Material (CSAM).</li>
+
+<li>Any activity that threatens child safety.</li>
+
+</ul>
+
+
+
+<h2>User Safety Features</h2>
+
+<ul>
+
+<li>Users can report inappropriate users or content.</li>
+
+<li>Users can block other users.</li>
+
+<li>Safety reports are reviewed and handled appropriately.</li>
+
+</ul>
+
+
+
+<h2>Handling Reports</h2>
+
+<p>
+All child safety reports are reviewed and appropriate actions may be taken,
+including content removal or account suspension.
+</p>
+
+
+
+<h2>Child Safety Contact</h2>
+
+<p>
+Email:
+<br>
+<strong>mydw35539@gmail.com</strong>
+</p>
+
+
+
+<h2>Developer Information</h2>
+
+<p>
+Developer:
+<br>
+<strong>elpop_mayaa.com</strong>
+</p>
+
+<p>
+App Name:
+<br>
+<strong>دردشه بنات مصر وسوريا</strong>
+</p>
+
+
+</div>
+
+
+<div class="footer">
+© 2026 elpop_mayaa.com - Child Safety Standards
+</div>
+
+
+</div>
+
+</body>
+</html>
