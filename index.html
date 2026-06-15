@@ -1,124 +1,43 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تواصل معنا</title>
-
-<style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:Tahoma, Arial, sans-serif;
-    }
-
-    body{
-        background:#f5f7fb;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        min-height:100vh;
-        padding:20px;
-    }
-
-    .contact-card{
-        background:#fff;
-        max-width:450px;
-        width:100%;
-        text-align:center;
-        padding:40px 30px;
-        border-radius:20px;
-        box-shadow:0 15px 40px rgba(0,0,0,.08);
-    }
-
-    .icon-container{
-        width:90px;
-        height:90px;
-        margin:0 auto 20px;
-        border-radius:50%;
-        background:linear-gradient(135deg,#7b2cff,#5a1ccc);
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-
-    .mail-icon{
-        font-size:40px;
-        color:#fff;
-    }
-
-    .mail-icon::before{
-        content:"✉";
-    }
-
-    h1{
-        color:#222;
-        margin-bottom:15px;
-    }
-
-    p{
-        color:#666;
-        line-height:1.8;
-        margin-bottom:25px;
-    }
-
-    .btn-connect{
-        display:inline-block;
-        background:#7b2cff;
-        color:#ffffff;
-        text-decoration:none;
-        padding:16px 20px;
-        border-radius:14px;
-        font-size:16px;
-        font-weight:bold;
-        box-shadow:0 8px 20px rgba(123,44,255,.3);
-        transition:all .3s ease;
-    }
-
-    .btn-connect:hover{
-        background:#5a1ccc;
-        transform:translateY(-2px);
-        box-shadow:0 10px 25px rgba(123,44,255,.4);
-    }
-
-    .btn-connect:active{
-        transform:translateY(1px);
-    }
-
-    .footer-text{
-        margin-top:25px;
-        font-size:13px;
-        color:#999;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج الاتصال بالأعضاء</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .form-container { max-width: 500px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .submit-btn { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
+        .submit-btn:hover { background-color: #0056b3; }
+    </style>
 </head>
-
 <body>
 
-<div class="contact-card">
+<div class="form-container">
+    <h2>تواصل معنا</h2>
+    <!-- تم ربط النموذج بخدمة Formspree وتوجيهه لبريدك الإلكتروني مباشرة -->
+    <form action="https://formspree.io" method="POST">
+        
+        <div class="form-group">
+            <label for="name">اسم العضو:</label>
+            <input type="text" id="name" name="name" required placeholder="أدخل اسمك هنا">
+        </div>
 
-    <div class="icon-container">
-        <div class="mail-icon"></div>
-    </div>
+        <div class="form-group">
+            <label for="email">البريد الإلكتروني للعضو:</label>
+            <input type="email" id="email" name="_replyto" required placeholder="name@example.com">
+        </div>
 
-    <h1>تواصل معنا الآن</h1>
+        <div class="form-group">
+            <label for="message">نص الرسالة:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+        </div>
 
-    <p>
-        اضغط على الزر أدناه لفتح Gmail مباشرة وإرسال رسالة إلكترونية،
-        وسنقوم بالرد عليك في أقرب وقت ممكن.
-    </p>
-
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elpopmaya@gmail.com&su=استفسار&body=مرحباً، أريد التواصل معكم"
-       target="_blank"
-       class="btn-connect">
-        إرسال رسالة إلكترونية
-    </a>
-
-    <div class="footer-text">
-        elpopmaya@gmail.com
-    </div>
-
+        <button type="submit" class="submit-btn">إرسال الرسالة</button>
+    </form>
 </div>
 
 </body>
