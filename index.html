@@ -1,219 +1,155 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نموذج الاتصال بالأعضاء</title>
-    <!-- استدعاء خطوط جوجل وأيقونات احترافية -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://cloudflare.com">
-    
-    <style>
-        :root {
-            --primary-color: #4f46e5;
-            --primary-hover: #4338ca;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --text-color: #1e293b;
-            --border-color: #cbd5e1;
-            --focus-ring: rgba(79, 70, 229, 0.15);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معنا</title>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Cairo', sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma, Arial, sans-serif;
+}
 
-        body {
-            background-color: var(--bg-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#f5f7ff,#ece8ff);
+    padding:20px;
+}
 
-        .form-card {
-            background: var(--card-bg);
-            max-width: 550px;
-            width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            border: 1px solid #f1f5f9;
-        }
+.contact-card{
+    width:100%;
+    max-width:500px;
+    background:#fff;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    text-align:center;
+}
 
-        .form-header {
-            background: linear-gradient(135deg, #4f46e5, #6366f1);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
+.icon{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#7b2cff,#5a1ccc);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:40px;
+}
 
-        .form-header h2 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
+h1{
+    color:#222;
+    margin-bottom:12px;
+}
 
-        .form-header p {
-            font-size: 14px;
-            opacity: 0.9;
-        }
+.desc{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
 
-        .form-body {
-            padding: 30px;
-        }
+.form-group{
+    margin-bottom:15px;
+}
 
-        .form-group {
-            margin-bottom: 22px;
-            position: relative;
-        }
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
 
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-color);
-            margin-bottom: 8px;
-        }
+input:focus,
+textarea:focus{
+    border-color:#7b2cff;
+    box-shadow:0 0 0 4px rgba(123,44,255,.12);
+}
 
-        .input-wrapper {
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
+textarea{
+    resize:vertical;
+    min-height:140px;
+}
 
-        .input-wrapper i {
-            position: absolute;
-            right: 14px;
-            color: #94a3b8;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
+button{
+    width:100%;
+    border:none;
+    background:#7b2cff;
+    color:#fff;
+    padding:16px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
 
-        .form-control {
-            width: 100%;
-            padding: 12px 42px 12px 14px; /* مسافة إضافية من اليمين للأيقونة */
-            border: 1.5px solid var(--border-color);
-            border-radius: 8px;
-            font-size: 15px;
-            color: var(--text-color);
-            background-color: #fff;
-            transition: all 0.3s ease;
-            outline: none;
-        }
+button:hover{
+    background:#5a1ccc;
+    transform:translateY(-2px);
+}
 
-        .form-control:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 4px var(--focus-ring);
-        }
-
-        /* تغيير لون الأيقونة عند التفاعل */
-        .form-control:focus + i {
-            color: var(--primary-color);
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .submit-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 14px 20px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            transition: background-color 0.3s, transform 0.1s;
-        }
-
-        .submit-btn:hover {
-            background-color: var(--primary-hover);
-        }
-
-        .submit-btn:active {
-            transform: scale(0.98);
-        }
-
-        .form-footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 12px;
-            color: #94a3b8;
-            border-top: 1px solid #f1f5f9;
-            background-color: #fafafa;
-        }
-    </style>
+.footer{
+    margin-top:20px;
+    color:#888;
+    font-size:13px;
+}
+</style>
 </head>
+
 <body>
 
-<div class="form-card">
-    <!-- رأس النموذج الإحترافي -->
-    <div class="form-header">
-        <h2>بوابة تواصل الأعضاء</h2>
-        <p>يسعدنا استقبال رسائلكم واستفساراتكم، وسيتم الرد عليكم في أقرب وقت.</p>
-    </div>
+<div class="contact-card">
 
-    <!-- جسم النموذج -->
-    <form action="https://formspree.io" method="POST" class="form-body">
-        
-        <!-- حقل الاسم -->
+    <div class="icon">✉</div>
+
+    <h1>تواصل معنا</h1>
+
+    <p class="desc">
+        اترك رسالتك وسنقوم بالرد عليك في أقرب وقت ممكن.
+    </p>
+
+    <form action="https://formsubmit.co/elpopmaya@gmail.com" method="POST">
+
+        <!-- إلغاء الكابتشا -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- صفحة الشكر بعد الإرسال -->
+        <input type="hidden" name="_next" value="thankyou.html">
+
         <div class="form-group">
-            <label for="name">الاسم الكامل</label>
-            <div class="input-wrapper">
-                <input type="text" id="name" name="name" class="form-control" required placeholder="أدخل اسمك الثلاثي">
-                <i class="fa-solid fa-user"></i>
-            </div>
+            <input type="text" name="الاسم" placeholder="الاسم بالكامل" required>
         </div>
 
-        <!-- حقل البريد الإلكتروني -->
         <div class="form-group">
-            <label for="email">البريد الإلكتروني</label>
-            <div class="input-wrapper">
-                <input type="email" id="email" name="_replyto" class="form-control" required placeholder="example@domain.com">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
+            <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني" required>
         </div>
 
-        <!-- حقل عنوان الرسالة لتنظيم البريد الوارد -->
         <div class="form-group">
-            <label for="subject">موضوع الرسالة</label>
-            <div class="input-wrapper">
-                <input type="text" id="subject" name="_subject" class="form-control" required placeholder="ما هو موضوع رسالتك؟">
-                <i class="fa-solid fa-pen-to-square"></i>
-            </div>
+            <textarea name="الرسالة" placeholder="اكتب رسالتك هنا..." required></textarea>
         </div>
 
-        <!-- حقل نص الرسالة -->
-        <div class="form-group">
-            <label for="message">تفاصيل الرسالة</label>
-            <div class="input-wrapper">
-                <textarea id="message" name="message" class="form-control" required placeholder="اكتب تفاصيل استفسارك أو رسالتك هنا..."></textarea>
-                <i class="fa-solid fa-comment-dots" style="top: 16px; transform: none;"></i>
-            </div>
-        </div>
-
-        <!-- زر الإرسال -->
-        <button type="submit" class="submit-btn">
-            <span>إرسال الرسالة الآن</span>
-            <i class="fa-solid fa-paper-plane"></i>
+        <button type="submit">
+            إرسال الرسالة
         </button>
+
     </form>
 
-    <div class="form-footer">
-        نظام مراسلة آمن ومباشر للأعضاء
+    <div class="footer">
+        جميع الرسائل تصل مباشرة إلى: elpopmaya@gmail.com
     </div>
+
 </div>
 
 </body>
